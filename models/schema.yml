@@ -8,5 +8,8 @@ sources:
         description: stock of products
       - name: raw_cc_sales
         description: sales of products
+        tests:
+          - unique:
+              column_name: "(product_id || '-' || date_date)"
 
 
